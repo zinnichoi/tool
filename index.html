@@ -11,61 +11,62 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"/>
 
-    <title>Tiktok tool</title>
+    <title>Tiktok tool for Linh meo 💕</title>
 </head>
 <body>
-<h1>Tiktok tool</h1>
+<h1>Tiktok tool for Linh meo 💕</h1>
 <div class="form-group">
-    <label for="sample">Sample</label>
-    <textarea class="form-control" id="sample" rows="5"></textarea>
-</div>
-<div class="form-group">
-    <label for="icon_selection">Icon to random</label>
+    <label for="icon_selection">Icons</label>
     <select class="selectpicker form-control" id="icon_selection" multiple data-live-search="true">
-        <option value="0" selected>😀</option>
-        <option value="1" selected>😁</option>
-        <option value="2" selected>😂</option>
-        <option value="3" selected>🤣</option>
-        <option value="4" selected>😃</option>
-        <option value="5" selected>😄</option>
-        <option value="6" selected>😅</option>
-        <option value="7" selected>😉</option>
-        <option value="8" selected>😊</option>
-        <option value="9" selected>😋</option>
-        <option value="10" selected>😎</option>
-        <option value="11" selected>😍</option>
-        <option value="12" selected>😘</option>
-        <option value="13" selected>😗</option>
-        <option value="14" selected>😙</option>
-        <option value="15" selected>😚</option>
-        <option value="16" selected>🙂</option>
-        <option value="17" selected>🤗</option>
-        <option value="18" selected>🤔</option>
-        <option value="19" selected>🙄</option>
-        <option value="20" selected>😛</option>
-        <option value="21" selected>😜</option>
-        <option value="22" selected>😝</option>
-        <option value="23" selected>😇</option>
-        <option value="24" selected>🤠</option>
-        <option value="25" selected>😺</option>
-        <option value="26" selected>😸</option>
-        <option value="27" selected>😹</option>
-        <option value="28" selected>😻</option>
-        <option value="29" selected>😼</option>
-        <option value="30" selected>😽</option>
-        <option value="31" selected>🙀</option>
     </select>
 </div>
 <div class="form-group">
     <label for="numberOfIcon">Number of icon</label>
     <input type="number" class="form-control" id="numberOfIcon" value="3">
 </div>
-<div class="form-group">
-    <label for="result">Result</label>
-    <textarea class="form-control" id="result" rows="5"></textarea>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="addToStart">
+    <label class="form-check-label" for="addToStart">
+        Add to start
+    </label>
 </div>
-<button type="button" id="generate" class="btn btn-success">Generate</button>
-<button type="button" id="copy" class="btn btn-info">Copy</button>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="addToEnd" checked>
+    <label class="form-check-label" for="addToEnd">
+        Add to end
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="different" checked>
+    <label class="form-check-label" for="different">
+        Different start and end
+    </label>
+</div>
+<form>
+    <div class="form-row">
+        <div class="col">
+            <label for="sample">Sample</label>
+            <textarea class="form-control" id="sample" rows="5"></textarea>
+            <label for="result" class="mt-2">Result</label>
+            <textarea class="form-control" id="result" rows="5"></textarea>
+            <button type="button" data-sample="#sample" data-result="#result" class="btn btn-success generate">
+                Generate
+            </button>
+        </div>
+        <div class="col">
+            <label for="sample2">Sample 2</label>
+            <textarea class="form-control" id="sample2" rows="5"></textarea>
+            <label for="result2" class="mt-2">Result 2</label>
+            <textarea class="form-control" id="result2" rows="5"></textarea>
+            <button type="button" data-sample="#sample2" data-result="#result2" class="btn btn-success generate">
+                Generate 2
+            </button>
+        </div>
+    </div>
+</form>
+
+<!--<button type="button" id="generate" class="btn btn-success">Generate</button>-->
+<!--<button type="button" id="copy" class="btn btn-info">Copy</button>-->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -81,40 +82,56 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 <script>
     var icons = [
-        '😀',
-        '😁',
-        '😂',
-        '🤣',
-        '😃',
-        '😄',
-        '😅',
-        '😉',
-        '😊',
-        '😋',
-        '😎',
-        '😍',
-        '😘',
-        '😗',
-        '😙',
-        '😚',
-        '🙂',
-        '🤗',
-        '🤔',
-        '🙄',
-        '😛',
-        '😜',
-        '😝',
-        '😇',
-        '🤠',
-        '😺',
-        '😸',
-        '😹',
-        '😻',
-        '😼',
-        '😽',
-        '🙀'
+        '🌹',
+        '🌸',
+        '🌷',
+        '🌻',
+        '💋',
+        '🎈',
+        '💐',
+        '🎁',
+        '🔮',
+        '💃',
+        '💌',
+        '🌺',
+        '💫',
+        '🎊',
+        '💥',
+        '🌈',
+        '🔥',
+        '🌟',
+        '🌵',
+        '🌲',
+        '🌳',
+        '🌴',
+        '🌱',
+        '🌿',
+        '🍀',
+        '🍃',
+        '🍄',
+        '🌼',
+        '🌈',
+        '🍭',
+        '💎',
+        '🎀',
+        '💜',
+        '🧡',
+        '💛',
+        '💚',
+        '💙',
+        '💕',
+        '💞',
+        '💓',
+        '💗',
+        '💖',
+        '💘',
+        '💝',
     ];
     var selectedIcons = icons;
+
+    jQuery.each(icons, function (i, item) {
+        $("#icon_selection").append(new Option(item, i, true, true));
+    })
 
     let randomNumber = function () {
         return Math.floor(Math.random() * (selectedIcons.length - 1));
@@ -123,27 +140,38 @@
     let randomIcon = function () {
         let result = '';
         let number = parseInt(jQuery('#numberOfIcon').val());
-        number = number ? number : 3;
+        number = number > 0 ? number : 3;
         for (let i = 0; i < number; i++) {
             result += selectedIcons[randomNumber()]
         }
         return result;
     }
 
-    jQuery('#generate').click(function () {
-        let sample = jQuery('#sample').val();
-        jQuery('#result').val(sample + ' ' + randomIcon());
-    });
+    jQuery('.generate').click(function () {
+        let sample = jQuery(jQuery(this).data('sample')).val();
+        let $result = jQuery(jQuery(this).data('result'));
+        let $currentButton = jQuery(this);
+        let icons = randomIcon();
+        if (jQuery('#addToStart').is(':checked')) {
+            sample = icons + ' ' + sample;
+        }
 
-    jQuery('#copy').click(function () {
-        let $result = jQuery('#result');
+        if (jQuery('#different').is(':checked')) {
+            icons = randomIcon();
+        }
+
+        if (jQuery('#addToEnd').is(':checked')) {
+            sample += ' ' + icons;
+        }
+
+        $result.val(sample);
         $result.focus();
         $result.select();
         try {
             document.execCommand('copy');
-            jQuery('#copy').text('Copied');
+            $currentButton.text('Copied');
             setTimeout(function () {
-                jQuery('#copy').text('Copy');
+                $currentButton.text('Generate');
             }, 2000);
         } catch (err) {
             console.log('Oops, unable to copy');
